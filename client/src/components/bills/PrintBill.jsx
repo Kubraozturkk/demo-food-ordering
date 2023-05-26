@@ -120,7 +120,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                         <div className="flex flex-col">
                           <span className="font-medium">{item.title}</span>
                           <span className="sm:hidden inline-block text-xs">
-                            Price {item.price}₺
+                            Price ${item.price}
                           </span>
                         </div>
                       </td>
@@ -164,7 +164,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                     </th>
                     <th className="text-right pt-4" scope="row">
                       <span className="font-normal text-slate-700">
-                        {customer?.subTotal}₺
+                        {customer?.subTotal}$
                       </span>
                     </th>
                   </tr>
@@ -205,7 +205,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                       <p className="font-normal text-slate-700">Total</p>
                     </th>
                     <th className="text-right pt-4" scope="row">
-                      <span className="font-normal text-slate-700">{customer?.totalAmount}₺</span>
+                      <span className="font-normal text-slate-700">${customer?.totalAmount}</span>
                     </th>
                   </tr>
                 </tfoot>
